@@ -73,7 +73,8 @@ function Weathercontent(props) {
     //getting weather
     function askweather(cityname, country) {
         console.log("i am from askweather()");
-        axios.get(`http://localhost:8080/weather?city=${cityname}&country=${country}`).then(response => {
+        const port=process.env.PORT || 8080;
+        axios.get(`http://localhost:${port}/weather?city=${cityname}&country=${country}`).then(response => {
             console.log("weatherdata:- " + `http://localhost:8080/weather?city=${cityname}&country=${country}`)
             //Changecity(response.data.city.name);
             Changecity(cityname);
@@ -199,7 +200,8 @@ function Weathercontent(props) {
         const longitude = position.coords.longitude;
 
         // Use a third-party service to get city information based on latitude and longitude
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=8994a5584c49f1961832c07565ce92e3`;
+        const weather_appid=process.env.WEATHER_APPID || "8994a5584c49f1961832c07565ce92e3";
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weather_appid}`;
 
         // Replace YOUR_OPENWEATHERMAP_API_KEY with your actual OpenWeatherMap API key
         fetch(apiUrl)
@@ -255,7 +257,8 @@ function Weathercontent(props) {
         backgroundImage: `url(${bg})`,
     }
     function getweatherbg() {
-        axios.get('http://localhost:8080/weatherimg').then(response => {
+        const port=process.env.PORT || 8080;
+        axios.get(`http://localhost:${port}/weatherimg`).then(response => {
             console.log(response.data.urls.raw)
             Changebg(response.data.urls.raw);
         }).catch(error => {
