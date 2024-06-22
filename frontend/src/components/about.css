@@ -1,0 +1,75 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Clan+Pro:wght@400;700&display=swap');
+
+/* Other styles go here */
+
+.about{
+    margin-top: 20px;
+    background-color:rgba(68,68,68,.87);
+    width: 100%;
+    min-height: 45vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutcontent{
+    background-color:transparent;
+    width: 80%;
+    min-height: 45vh;
+    margin: 5px;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.leftdiv{
+    background-color:transparent;
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+}
+.rightdiv{
+    background-color:transparent;
+    width:280px;
+    height: 280px;
+    margin: 10px;
+
+}
+.leftdivfont{
+    font-family: 'Clan Pro', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.leftdivpara{
+    margin: 12px 5px;
+}
+.inshortdiv{
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+}
+.imgdiv{
+    background-image: url('inshort.png');
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.leftdivfont_inshorts{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+.aboutme{
+    display: inline;
+    padding: 5px;
+}
+.aboutme p{
+    color: white;
+    font-size: small;
+}

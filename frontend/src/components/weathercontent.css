@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.weather_div_wcon {
+    /* position: absolute; */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 88vh;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current_forcastdiv_wcon {
+    background-color: transparent;
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.current_forcastdiv_wcon p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    place-content: center;
+}
+
+#degree {
+    font-size: 30px;
+}
+
+.current_forcast_wcon div {
+    background-color: transparent;
+    margin: 0.5vw;
+}
+
+.future_forcastdiv_wcon {
+    background-color: transparent;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: auto;
+
+}
+
+.current_forcast_wcon {
+    width: 150px;
+    height: 100px;
+    backdrop-filter: blur(10px);
+    /* Adjust the blur intensity as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the background color and opacity */
+    display: grid;
+    place-content: center;
+    margin: 0.5vw;
+    border-radius: 2vw;
+    /* transition: height 0.5s,transform 1s;
+    transform-origin: center center; */
+    animation: scaleupdown 2s ease-in-out infinite;
+}
+
+@keyframes scaleupdown {
+
+    0%,
+    100% {
+        /* at begining and end */
+        transform: scale(1);
+        /* div in original position with no animation */
+    }
+
+    50% {
+        /* at mid of animation  */
+        transform: scale(1.05);
+        /* div size change into 105% to its original size */
+    }
+}
+
+/* .current_forcast:hover{
+    transform: scaleY(1.5)
+} */
+.current_forcast_wcon div p {
+    display: flex;
+    place-content: center;
+}
+
+.daydiv_wcon {
+    width: 130px;
+    height: 130px;
+    border-radius: 0.5vw;
+    backdrop-filter: blur(10px);
+    /* Adjust the blur intensity as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 0.3vw;
+}
+
+.daydiv_wcon:hover {
+    background-color: rgba(1, 1, 2, 0.5);
+    transform: rotateY(0deg);
+    height: 150px;
+}
+
+.daydiv_wcon div p {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    place-content: center;
+    margin: 0.8vw;
+}
+
+.boldname_wcon {
+    background-image: linear-gradient(rgb(29, 27, 27), rgb(35, 41, 35), rgb(123, 123, 102));
+    border-radius: 0vw;
+}
+
+.daydiv_wcon:hover .boldname_wcon {
+    font-weight: bolder;
+    background-image: linear-gradient(rgb(33, 32, 32), rgb(34, 36, 34), rgb(124, 124, 94));
+    border-radius: 1vw;
+}
+
+.daydiv_wcon div div {
+    display: flex;
+    place-content: center;
+}
+
+.current_forcast_wcon h2 {
+    margin: 2vw;
+    text-align: center;
+}
+
+.current_forcast_wcon div {
+    justify-content: center;
+    align-items: center;
+}
+
+.current_forcast_wcon h6 {
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#cloudyimgdiv {
+    height: 6vw;
+    width: 9vw;
+    margin: 0vw;
+    background-size: cover;
+    background-position: center;
+}
+
+#daynightimgdiv {
+    height: 6vw;
+    width: 6vw;
+    margin: 0vw;
+    border-radius: 3vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.cloudcondition_wcon {
+    height: 50px;
+    width: 70px;
+    margin: auto;
+    border-radius: 1vw;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    /* Adjust the blur intensity as needed */
+    background-color: white
+}
+
+.none_wcon {
+    display: none;
+}
+
+.daydiv_wcon:hover .none_wcon {
+    display: contents;
+}
+
+.error-popup_wcon {
+    backdrop-filter: blur(10px);
+    /* Adjust the blur intensity as needed */
+    background-color: rgba(65, 63, 63, 0.5);
+    margin: auto;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 5vw;
+    padding: 1vw;
+    position: relative;
+    top: 8vw;
+}
+
+.error-popup_wcon p {
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.error-popup_wcon button {
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.1vw;
+}
+
+@media (max-width:800px) {
+    .current_forcast_wcon {
+        margin: 1vw;
+    }
+
+    .error-popup_wcon {
+
+        width: 180px;
+        height: 100px;
+    }
+    .error-popup_wcon p {
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {}

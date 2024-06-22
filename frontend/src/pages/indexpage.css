@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Clan+Pro:wght@400;700&display=swap');
+
+.indexpageip {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 620px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbarip {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Set the nav border shadown */
+
+}
+
+.indexcontentip {
+    width: 100%;
+    min-height: 560px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(235, 235, 235);
+}
+
+.inshortlogoip {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    background-image: url('./imagefolder/inshort.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inshortlogo_nameip {
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+}
+
+.inshortnameip {
+    background-color: rgb(255, 255, 255);
+}
+
+.inshortnameip p {
+    line-height: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.inshortnameip p:nth-child(1) {
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Clan Pro', sans-serif;
+    color: rgb(84, 84, 84);
+}
+
+.inshortnameip p:nth-child(2) {
+    font-size: 11px;
+    text-align: end;
+    font-style: italic;
+    color: rgb(86, 86, 86);
+    font-weight: bold;
+}
+
+.navigationip {
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-item:end for normal run */
+}
+
+.navigationip a {
+    margin: 5px;
+    font-family: 'Clan Pro', sans-serif;
+    color: rgb(210, 213, 216);
+    line-height: 10px;
+}
+
+.bdycontentip {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 550px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scrollerip {
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+}
+
+.bodychildip {
+    /* display: inline-block; */
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 545px;
+    margin: auto;
+    /* margin: 2px; */
+}
+
+.navigatorip {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 10px;
+    align-items: start;
+    justify-content: center;
+}
+
+.navigatorpoint {
+    background-color: rgb(193, 188, 236);
+    width: 7px;
+    height: 7px;
+    border-radius: 20px;
+    margin: 2px 5px;
+}
+
+.navigatorpoint:hover {
+    background-color: rgba(0, 33, 244, 0.971);
+    cursor: pointer;
+}
+
+.scrollerip div {
+    font-size: 35px;
+    margin: 5px;
+}
+
+.scrollerip div:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.currentrenderdiv {
+    background-color: rgba(0, 33, 244, 0.971);
+
+}
+
+.bodychildcontentip {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagip {
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contenip {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 500px;
+}
+
+.indexcommonfontip {
+    text-wrap: wrap;
+    font-weight: 200;
+    line-height: 28px;
+    font-family: 'Clan Pro', sans-serif;
+
+}
+
+.appstoredivip {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 280px;
+    height: 50px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.applestoreip {
+    height: 90px;
+    width: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.androidstoreip {
+    height: 90px;
+    width: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.titlefontip {
+    font-size: 28px;
+    font-family: 'Clan Pro', sans-serif;
+    color: #369af8;
+    font-weight: 200;
+    line-height: 28px;
+
+}
+
+.titledescip {
+    font-size: 20px;
+    font-family: 'Clan Pro', sans-serif;
+    color: #727272;
+    font-weight: 200;
+    line-height: 28px;
+}
+
+.pagemiddivip {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 25px;
+}
+
+.bodychildcontenip {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titledesip {
+    font-size: 22px;
+    font-family: 'Clan Pro', sans-serif;
+    color: #369af8;
+    font-weight: lighter;
+    line-height: 28px;
+}
+
+.pagemiddivchildip {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(255, 255, 255);
+}
+
+.pagemidcip {
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid rgb(236, 236, 236);
+}
+
+.pagemidcimgip {
+    width: 200px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: 500%;
+    background-color: rgb(255, 255, 255);
+}
+
+.pagemidccontentip {
+    width: 200px;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+}
+
+.p1ip {
+
+    background-position: -360px 0;
+}
+
+.p2ip {
+
+    background-position: -625px 0;
+}
+
+.p3ip {
+
+    background-position: -815px 0;
+}
+
+.pagemidccontent_tilteip {
+    line-height: 1px;
+    font-weight: 800;
+    font-family: 'Clan Pro', sans-serif;
+    text-align: center;
+}
+
+.pagemidccontent_descip {
+    line-height: 20px;
+    font-family: 'Clan Pro', sans-serif;
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    .bdycontentip {
+        width: 100%;
+    }
+    .bodychildip {
+        width: 100%;
+    }
+    .imagip {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenip {
+        width: 200px;
+        height: 200px;
+    }
+
+    .indexcommonfontip {
+        line-height: 14px;
+        font-size: 15px;
+
+    }
+
+    .titlefontip {
+        font-size: 20px;
+    }
+
+    .applestoreip {
+        width: 80px;
+        height: 50px;
+    }
+
+    .androidstoreip {
+        width: 80px;
+        height: 50px;
+    }
+
+    .appstoredivip {
+        width: 200px;
+        height: 50px;
+    }
+
+    .pagemiddivip {
+        width: 100%;
+        height: 80px;
+        flex-wrap: wrap;
+    }/* 
+    .pagemiddiv{
+        width: auto;
+        height: auto;
+    } */
+    .pagemiddivchildip{
+        width: 80px;
+        height: 30px;
+    }
+    .lastsecondip{
+        display: inline-block;
+        text-align: center;
+    }
+    .pagemidcip {
+        height: 150px;
+    }
+    .titledesip{
+        text-wrap: wrap;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,18 @@
+page routing
+mobile or emial login with session
+mongodb connection
+page title with inshort logo and name
+section fro weatherforecast in newspage
+start weather application"Inshort weather"
+gif if no internet connection an making request
+8994a5584c49f1961832c07565ce92e3
+https://api.openweathermap.org/data/2.5/weather?q=delhi,IN&appid=8994a5584c49f1961832c07565ce92e3
+https://api.openweathermap.org/data/2.5/forecast?q=Turbhe,INid=524901&appid=8994a5584c49f1961832c07565ce92e3
+add about section in each and every page
+`https://openweathermap.org/img/w/04d.png`
+
+mobile number authentication using otp for login and create a session ans being avaiable for last 4 or 5 day along with it store user data into database and window for userdata fetching 
+
+issue reason file getting more class with same name 
+
+Note:before npm start in frontend type " $env:NODE_OPTIONS = "--openssl-legacy-provider"

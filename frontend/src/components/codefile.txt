@@ -1,0 +1,25 @@
+
+            {/* <div className="news_div">
+                <div className="news_content">
+
+                    {
+                        mynews.map((ele) => {
+                            console.log("elemnte" + ele);
+                            return (
+                                <>
+                                    <div className="content">
+                                        <div className="content_img" style={{ 'backgroundImage': `url(${ele.urlToImage})`, backgroundSize: 'cover', backgroundRepeat: 'round' }}>
+                                        </div>
+                                        <div className="content_description">
+                                            <p className="news_title">{ele.title}</p>
+                                            <p className="news_source"><b>shots by :-</b> {ele.source.name} / {ele.author} / {ele.publishedAt}</p>
+                                            <p className="news_description">{ele.description}<a href={ele.url} target='_blank' style={{textDecoration:'none'}}>...Read more</a></p>
+                                        </div>
+                                    </div>
+
+                                </>
+                            )
+                        })
+                    }
+                </div>
+            </div> */}
