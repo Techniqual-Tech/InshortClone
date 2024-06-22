@@ -10,9 +10,10 @@ let reqcount=0;
 
 //import newapi module
 const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('e5a6fb40c8714bfbbb6d723fbfa84257');
+const key=process.env.NEWS_KEY || 'e5a6fb40c8714bfbbb6d723fbfa84257';
+const newsapi = new NewsAPI(key);
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
   console.log("Get requrest");
@@ -51,8 +52,10 @@ app.get('/weatherimg', (req, res) => {
 app.get('/weather', (req, res) => {
   const city=req.query.city;
   const country=req.query.country;
+  const weather_key=process.env.WEATHER_KEY || "8994a5584c49f1961832c07565ce92e3";
+  const weather_id=process.env.WEATHER_ID || "524901";
   console.log(`https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&id=524901&appid=8994a5584c49f1961832c07565ce92e3`);
-  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&id=524901&appid=8994a5584c49f1961832c07565ce92e3`)
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&id=${weather_id}&appid=${weather_key}`)
   .then(response => {
     if (response.ok) {
       console.log("responseweather:-"+response)
@@ -72,7 +75,8 @@ app.get('/weather', (req, res) => {
 //another news api
 /* app.get('/api', (req, res) => {
   const query = req.query.query ;
-  fetch(`https://gnews.io/api/v4/top-headlines?category=${query}&lang=en&country=in&max=10&apikey=696d9f3ff9cbba6f0d115047747ce766`)
+  const weather_key=process.env.WEATHER_KEY1 || "696d9f3ff9cbba6f0d115047747ce766";
+  fetch(`https://gnews.io/api/v4/top-headlines?category=${query}&lang=en&country=in&max=10&apikey=${weather_key}`)
   .then(response => {
     if (response.ok) {
       return response.json(); // Convert the response to JSON
